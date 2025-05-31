@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $query = "INSERT INTO users (name, email, password, role, mess_name, image) VALUES ('$name', '$email', '$password', '$role', '$mess_name', '$image')";
     $conn->query($query);
 
-    header("Location: login.php");
+    header("Location: index.php");
     exit;
 }
 ?>
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <button type="submit">Register</button>
     </form>
-    <p>Already have an account? <a href="login.php">Login</a></p>
+    <p>Already have an account? <a href="index.php">Login</a></p>
 </div>
 
 <script>
